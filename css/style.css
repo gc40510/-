@@ -1,0 +1,167 @@
+.header{
+    display: flex;
+    padding: 0 88px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 492px;
+    padding: 40px 0;
+}
+
+.menu li{
+    box-sizing: border-box;
+    text-align: center;
+    width: 25%;
+}
+
+.menu a{
+    font-size: 20px;
+}
+
+.banner{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png);
+    background-size: cover;
+    height: 840px;
+    background-position: center;
+} 
+
+h2{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:992px){
+    .header{
+        padding: 0 39px;
+    }
+    .menu{
+        width: 420px;
+    }
+}
+
+@media (max-width:767px){
+    .header{
+        padding: 0;
+        flex-direction: column;
+    }
+    
+    .menu{
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu li{
+        width: 50%;
+        border: 1px solid #fff;
+        padding: 8px 0;
+    }
+
+    .logo{
+        padding: 10px 0;
+    }
+    .banner{
+        height: 394px;
+    }
+}
+
+.footer{
+    padding: 36px 0;
+}
+
+.footer-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-menu{
+    display: flex;
+    width: 432px;
+    justify-content: space-between;
+}
+
+.social-app{
+    width: 208px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu a{
+    font-size: 16px;
+}
+.footer-contact{
+    padding: 32px 0;
+    border-bottom: 1px solid #FFFFFF;
+}
+.footer-contact li{
+    display: flex;
+    font-size: 32px;
+}
+.footer-contact img{
+    padding-right: 10px;
+}
+.footer-third{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px ;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+}
+.footer-logo{
+    margin-right: 38px;
+}
+.privacy{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 188px;
+}
+
+@media (max-width:992px){
+    .social-app{
+        width: 120px;
+    }
+    .footer img{
+        width: 24px;
+        height: 24px;
+    }
+    .footer-contact li{
+        font-size: 20px;
+    }
+    .footer-logo{
+        display: none;
+    }
+}
+
+@media (max-width:767px){
+    .footer li{
+        font-size: 14px;
+    }
+    .footer-menu{
+        display: none;
+    }
+    .footer-contact{
+        padding-top: 0;
+        padding-bottom: 23px;
+    }
+    .footer {
+        padding: 23px 0;
+    }
+    .footer-third{
+        display:block;
+    }
+    .privacy{
+        display: block;
+    }
+    .social-app{
+        display: none;
+
+    }
+}
