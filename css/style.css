@@ -68,100 +68,94 @@ h2{
         height: 394px;
     }
 }
-
-.footer{
-    padding: 36px 0;
-}
-
-.footer-main{
+.footer-content{
     display: flex;
-    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 22px;
     justify-content: space-between;
+    border-bottom: 1px solid white;
 }
-
 .footer-menu{
+    width: 464px;
     display: flex;
-    width: 432px;
     justify-content: space-between;
+    padding-bottom: 32px;
 }
-
 .social-app{
-    width: 208px;
     display: flex;
     justify-content: space-between;
-}
-
-.footer-menu a{
-    font-size: 16px;
-}
-.footer-contact{
-    padding: 32px 0;
-    border-bottom: 1px solid #FFFFFF;
+    width: 208px;
 }
 .footer-contact li{
-    display: flex;
-    font-size: 32px;
-}
-.footer-contact img{
-    padding-right: 10px;
-}
-.footer-third{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 24px ;
-}
-.copyright{
+    line-height: 1.5;
+    font-size: 36px;
     display: flex;
     align-items: center;
+}
+.footer-contact img{
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
 }
 .footer-logo{
     margin-right: 38px;
 }
-.privacy{
-    align-items: center;
+.footer-second{
     display: flex;
     justify-content: space-between;
-    width: 188px;
+    padding: 24px 0;
 }
-
+.copyright-detail{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.privacy{
+    width: 188px;
+    display: flex;
+    justify-content: space-between;
+}
 @media (max-width:992px){
-    .social-app{
-        width: 120px;
+   .footer-logo{
+       display: none;
+   }
+   .footer img{
+       width: 24px;
+       height: 24px;
+   }
+   .social-app{
+       width: 120px;
+   }
+   .footer-contact li{
+       font-size: 20px;
+   }
+   .privacy{
+    width: 150px;
+    font-size: 14px;
     }
-    .footer img{
-        width: 24px;
-        height: 24px;
-    }
-    .footer-contact li{
-        font-size: 20px;
-    }
-    .footer-logo{
-        display: none;
-    }
+
 }
 
 @media (max-width:767px){
-    .footer li{
-        font-size: 14px;
-    }
     .footer-menu{
         display: none;
     }
-    .footer-contact{
-        padding-top: 0;
-        padding-bottom: 23px;
+    .footer-second{
+        flex-direction: row-reverse;
+        align-items: flex-end;
     }
-    .footer {
-        padding: 23px 0;
+    .copyright-detail{
+        flex-direction:column;
+        font-size: 14px;
     }
-    .footer-third{
-        display:block;
+    .footer-logo{
+        display: block;
+    }
+    .footer-logo img{
+        width: 46px;
+        height: 28px;
     }
     .privacy{
         display: block;
-    }
-    .social-app{
-        display: none;
-
     }
 }
