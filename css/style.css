@@ -23,17 +23,7 @@
     font-size: 20px;
 }
 
-.banner{
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png);
-    background-size: cover;
-    height: 840px;
-    background-position: center;
-} 
 
-h2{
-    display: flex;
-    align-items: center;
-}
 
 @media (max-width:992px){
     .header{
@@ -68,6 +58,397 @@ h2{
         height: 394px;
     }
 }
+
+
+.banner{
+    height: 840px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png);
+    background-position: center;
+    background-size: cover;
+} 
+.banner .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+}
+.first-banner-slogan{
+    font-size: 36px;
+}
+.second-banner-slogan{
+    font-size: 64px;
+}
+@media (max-width:992px){
+    .banner{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png);
+    }
+    .first-banner-slogan{
+        font-size: 20px;
+    }
+    .second-banner-slogan{
+        font-size: 48px;
+    }
+ 
+ }
+ @media (max-width:767px){
+    .banner{
+       height: 394px;
+    }
+   .first-banner-slogan{
+       font-size: 16px;
+   }
+   .second-banner-slogan{
+       font-size: 32px;
+   }
+    
+}
+
+ .service{
+     background-color:#fbf2f2;
+     padding: 64px 0;
+ }
+ .service-title{
+     text-align: center;
+     font-size: 48px;
+ }
+ .service-detail{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-top: 60px;
+     width: 100%;
+ }
+ .service-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 208px;
+ }
+ .service-pic{
+     width: 100px;
+     height: 100px;
+ }
+ .service-discribe-title{
+     margin-top: 40px;
+ }
+ 
+ @media (max-width:992px){
+    .service-list{
+        width: 35%;
+    }
+ }
+ @media (max-width:767px){
+     .service-title{
+         font-size: 24px;
+     }
+    .service-detail{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .service-list{
+        width: 100%;
+    }
+    
+}
+.glasses-slogon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.classic-glasses-title {
+    margin: 64px 0;
+    text-align: center;
+    font-size: 48px;
+}
+.glasses-pic{
+    width: 50%;
+}
+.glasses-slogon-list{
+    margin-bottom: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.optical::before{
+    content: "";
+    display: inline-block;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-diamond.svg) no-repeat;
+    background-size: contain;
+    height: 37px;
+    width: 48px;
+}
+.optical{
+    text-align: center;
+    margin-left: 30px;
+    font-size: 48px;
+}
+.sunglasses::before{
+    content: "";
+    display: inline-block;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun.svg) no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 48px;
+}
+.sunglasses{
+    margin-right: 30px;
+    font-size: 48px;
+}
+
+.functional::before{
+    content: "";
+    display: inline-block;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder.svg) no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 35px;
+}
+.functional{
+    margin-left: 30px;
+    font-size: 48px;
+}
+
+@media (max-width:992px){
+   .glasses-slogon-list:nth-child(2){
+       justify-content: flex-end;
+       flex-direction: row-reverse;
+   }
+   .glasses-slogon-list {
+       margin-bottom: 8px;
+    }
+   .optical{
+       font-size: 28px;
+    }
+    .sunglasses{
+        margin-left: 30px;
+        margin-right: 0;
+        font-size: 28px;
+    }
+    .functional{
+        font-size: 28px;
+    }
+   .optical::before{
+        height: 32px;
+        width: 32px;
+ }
+   .sunglasses::before{
+        height: 32px;
+        width: 32px;
+ }
+   .functional::before{
+       height: 32px;
+       width: 32px;
+    }
+ 
+}
+ 
+ @media (max-width:767px){
+    .classic-glasses ul{
+        position: relative;
+    }
+    .glasses-slogon li{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .glasses-slogon h2{   
+        position: absolute;
+       
+        color: #ffffff;
+    }
+    .classic-glasses-title {
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    .glasses-pic{
+        width: 100%;
+    }
+    .optical::before{
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-diamond-white.svg) no-repeat;
+    }
+   .sunglasses::before{
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun-white.svg) no-repeat;
+    }
+   .functional::before{
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder-white.svg) no-repeat;
+    }
+ }
+
+ .design{
+     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png);
+     background-position: center;
+     background-size: cover;
+ }
+ .design-title{
+     padding-top: 64px;
+     font-size: 48px;
+     text-align: center;
+ }
+ .design ul{
+    display: flex;
+    padding: 60px 0;
+    justify-content: space-between;
+    position: relative;
+ }
+ .design li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+ .design-pic{
+    width: 90%;
+ }
+ .design-pic-text{
+     font-size: 72px;
+     position: absolute;
+ }
+
+ @media (max-width:992px){
+    .design-title{
+        font-size: 32px;
+    }
+    .design-pic-text{
+        font-size: 32px;
+    }
+ 
+ }
+ 
+ @media (max-width:767px){
+    .design ul{
+        flex-direction: column;
+        padding: 0;
+    }
+    .design-pic{
+        padding: 16px 0;
+    }
+ }
+ .customer-recommend{
+     padding: 0 20px;
+ }
+.customer-comment{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 64px;
+}
+ .customer-recommend-title{
+     font-size: 48px;
+     text-align: center;
+     padding: 64px 0;
+ }
+ .customer-recommend li{
+     width: 21%;
+     border: 1px solid #DEE2E6 ;
+ }
+ .customer-comment-content{
+    padding: 16px;
+ }
+
+ @media (max-width:992px){
+    .customer-comment{
+        flex-wrap: wrap;
+        padding: 25px 0;
+    }
+    .customer-recommend-title{
+        padding: 32px 0;
+        font-size: 32px;
+    }
+    .customer-recommend li{
+        margin-bottom: 28px;
+        width: 47%;
+    }
+ }
+ 
+ @media (max-width:767px){
+     .customer-recommend-title{
+         padding: 20px 0;
+     }
+     .customer-comment{
+         padding: 0;
+     }
+    .customer-recommend li{
+        width: 100%;
+    }
+    .customer-recommend img{
+        width: 100%;
+    }
+ }
+.contact-us{
+    background-color: #AA06010D;
+    padding: 64px 0;
+}
+.contact-us-form{
+    width: 60%;
+    margin: 0 auto;
+}
+ .contact-us-title{
+     font-size: 48px;
+     text-align: center;
+ }
+ .contact-us-preface{
+     font-size: 20px;
+ }
+ .contact-us-element{
+     margin: 14px 0;
+     width: 100%;
+ }
+ .contact-us-element input{
+     border: 1px solid black;
+     background-color: #AA06010D;
+     padding: 14px 16px;
+     width: 100%;
+     display: block;
+ }
+ .contact-us-element textarea{
+     width: 100%;
+     padding: 14px 16px;
+     display: block;
+     background-color: #AA06010D;
+ }
+ .contact-us-checkbox{
+     margin-bottom: 42px;
+ }
+ .contact-us-submit{
+     display: block;
+     text-align: center;
+     border: 0px;
+     margin: 0 auto;
+     padding: 16px 143px;
+ }
+ @media (max-width:992px){
+    .contact-us-title{
+        font-size: 32px;
+    }
+    .contact-us-preface{
+        font-size: 16px;
+    }
+    .contact-us-element input{ 
+        padding: 8px 12px;
+
+    }
+    .contact-us-element textarea{ 
+        padding: 8px 12px;
+    }
+    .contact-us-checkbox{
+        margin-bottom: 28px;
+    }
+    .contact-us-checkbox label{
+        font-size: 14px;
+    }
+    .contact-us-submit{
+        padding: 8px 76px;
+    }
+ }
+ 
+ @media (max-width:767px){
+    .contact-us-form{
+        width: 100%;
+    }
+ }
+
+
 .footer-content{
     display: flex;
     padding-top: 48px;
