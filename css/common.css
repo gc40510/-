@@ -27,3 +27,7 @@ img{
         max-width: 345px;
     }
 }
+
+.text-bold{
+    font-weight:bold;
+}
